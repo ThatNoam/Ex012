@@ -25,5 +25,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        tb = findViewById(R.id.toggleButton);
+        sw = findViewById(R.id.switch1);
+        btn = findViewById(R.id.button);
+        layout = findViewById(R.id.layout);
     }
+
 }
