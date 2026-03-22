@@ -32,4 +32,21 @@ public class MainActivity extends AppCompatActivity {
         layout = findViewById(R.id.layout);
     }
 
+    public void clicked(View view)
+    {
+        boolean switchOn = sw.isChecked();
+        boolean toggleOn = tb.isChecked();
+
+        if (switchOn && toggleOn) {
+            layout.setBackgroundColor(Color.RED);
+        } else if (switchOn) {
+            layout.setBackgroundColor(Color.GREEN);
+        } else if (toggleOn) {
+            layout.setBackgroundColor(Color.BLUE);
+        } else {
+            layout.setBackgroundColor(Color.YELLOW);
+        }
+    }
+
+
 }
